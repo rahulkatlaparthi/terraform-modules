@@ -19,7 +19,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/modules/'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
     backendServiceArm: 'Free Trial(1)(aa8cf85a-4850-4a20-a36c-298efad14547)'
     backendAzureRmResourceGroupName: 'dev'
     backendAzureRmStorageAccountName: 'samplest56h'
@@ -30,5 +30,5 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'apply'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/modules/'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
     environmentServiceNameAzureRM: 'Free Trial(1)(aa8cf85a-4850-4a20-a36c-298efad14547)'
