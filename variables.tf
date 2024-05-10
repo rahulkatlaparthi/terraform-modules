@@ -43,11 +43,11 @@ variable "account_kind" {
 
 
 
-variable "skuname" {
-  description = "The SKUs supported by Microsoft Azure Storage. Valid options are Premium_LRS, Premium_ZRS, Standard_GRS, Standard_GZRS, Standard_LRS, Standard_RAGRS, Standard_RAGZRS, Standard_ZRS"
-  default     = "Standard_LRS"
-  type        = string
-}
+// variable "skuname" {
+//   description = "The SKUs supported by Microsoft Azure Storage. Valid options are Premium_LRS, Premium_ZRS, Standard_GRS, Standard_GZRS, Standard_LRS, Standard_RAGRS, Standard_RAGZRS, Standard_ZRS"
+//   default     = "Standard_LRS"
+//   type        = string
+// }
 
 variable "access_tier" {
   description = "Defines the access tier for BlobStorage and StorageV2 accounts. Valid options are Hot and Cool."
