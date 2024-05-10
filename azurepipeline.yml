@@ -20,6 +20,11 @@ steps:
     provider: 'azurerm'
     command: 'init'
     workingDirectory: '$(System.DefaultWorkingDirectory)/modules/'
+    backendServiceArm: 'Free Trial(1)(aa8cf85a-4850-4a20-a36c-298efad14547)'
+    backendAzureRmResourceGroupName: 'dev'
+    backendAzureRmStorageAccountName: 'samplest56h'
+    backendAzureRmContainerName: 'sample'
+    backendAzureRmKey: 'rahstate.tf'
 
 - task: TerraformTaskV4@4
   inputs:
