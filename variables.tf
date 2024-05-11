@@ -27,6 +27,19 @@ variable "account_replication_type" {
   type        = string
 }
 
+variable "tier" {
+  
+  default     = "Standard"
+  type        = string
+}
+
+variable "size" {
+  
+  default     = "S1"
+  type        = string
+}
+
+
 
 
 
