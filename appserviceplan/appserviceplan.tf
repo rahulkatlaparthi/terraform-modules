@@ -8,3 +8,7 @@ resource "azurerm_app_service_plan" "example" {
     size = var.size
   }
 }
+
+output "appserviceplanid" {
+  value = azurerm_app_service_plan.example.id
+}
