@@ -53,7 +53,7 @@ module "appservice"{
   source = "./appservice"
   resource_group_name=var.resource_group_name
   location=var.location
-  name= var.app_service_name
+  app_service_name= var.app_service_name
   app_service_plan_id=module.appserviceplan.example.id
   user_assigned_identity=module.umi.example.id
 }
