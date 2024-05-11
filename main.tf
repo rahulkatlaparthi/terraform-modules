@@ -27,7 +27,7 @@ module "resource_group"{
 
 module "storage"{
   source = "./Storage"
-  resource_group_name=module.resource_group.resource_group_id
+  resource_group_name=module.resource_group.id
   location=var.location
   account_tier             = var.account_tier
   account_replication_type = var.account_replication_type
