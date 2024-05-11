@@ -34,20 +34,20 @@ provider "azurerm" {
 //   depends_on=[module.resource_group]
 // }
 
-// module "umi"{
-//   source = "./umi"
-//   resource_group_name=var.resource_group_name
-//   location=var.location
+module "umi"{
+  source = "./umi"
+  resource_group_name=var.resource_group_name
+  location=var.location
 
-// }
+}
 
-// module "appserviceplan"{
-//   source = "./appserviceplan"
-//   resource_group_name=var.resource_group_name
-//   location=var.location
-//   tier=var.tier
-//   size=var.size
-// }
+module "appserviceplan"{
+  source = "./appserviceplan"
+  resource_group_name=var.resource_group_name
+  location=var.location
+  tier=var.tier
+  size=var.size
+}
 
 module "appservice"{
   source = "./appservice"
