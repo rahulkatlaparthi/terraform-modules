@@ -6,9 +6,7 @@
 
 variable "resource_group_name" {
   description = "A container that holds related resources for an Azure solution"
-    default     = "example-resourcessssesSSS"
-  
-
+    default     = "example-resourcessssesSSSs"
   type        = string
 }
 
@@ -20,12 +18,12 @@ variable "location" {
 }
 
 variable "account_tier" {
-  default     = "West Europe"
+  default     = "Standard"
   type        = string
 }
 
 variable "account_replication_type" {
-  default     = "West Europe"
+  default     = "GRS"
   type        = string
 }
 
