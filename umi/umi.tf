@@ -6,6 +6,6 @@ resource "azurerm_user_assigned_identity" "example" {
   
 }
 
-output "appserviceplanid" {
-    value = "${azurerm_user_assigned_identity.example.id}"
+output "umiid" {
+    value = azurerm_user_assigned_identity.example.id
 }
