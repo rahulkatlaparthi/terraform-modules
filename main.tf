@@ -31,6 +31,5 @@ module "storage"{
   location=var.location
   account_tier             = var.account_tier
   account_replication_type = var.account_replication_type
-  depends_on=[resource_group]
 }
 
