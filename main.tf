@@ -49,3 +49,11 @@ provider "azurerm" {
 //   size=var.size
 // }
 
+module "appservice"{
+  source = "./appservice"
+  resource_group_name=var.resource_group_name
+  location=var.location
+  tier=var.tier
+  size=var.size
+}
+
