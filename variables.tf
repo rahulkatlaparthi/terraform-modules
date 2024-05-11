@@ -6,7 +6,7 @@
 
 variable "resource_group_name" {
   description = "A container that holds related resources for an Azure solution"
-    default     = "example-resourcesssses"
+    default     = "example-resourcessssesSSS"
   
 
   type        = string
