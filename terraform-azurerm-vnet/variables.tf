@@ -22,10 +22,10 @@ variable "storage_account_name" {
 }
 
 
-variable "sku_name" {
-  description = "The name of the azure storage account"
-  type        = string
-}
+// variable "sku_name" {
+//   description = "The name of the azure storage account"
+//   type        = string
+// }
 
 
 
