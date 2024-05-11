@@ -20,7 +20,7 @@ provider "azurerm" {
 }
 
 module "resource_group"{
-  source = "./terraform-azurerm-vnet"
+  source = "./RG"
   resource_group_name=var.resource_group_name
   location=var.location
 
