@@ -19,15 +19,7 @@ provider "azurerm" {
   features {}
 }
 
-module "storage"{
-    source = "./terraform-azurerm-vnet"
-    name                      = "sampleahsts"
-    resource_group_name       = "example-resources"
-    location                  = "West Europe"
-    access_tier= var.access_tier
-    account_kind              = "StorageV2"
-    account_tier              = "Cool"
-    account_replication_type  = "LRS"
-    min_tls_version           = "TLS1_2"
+module "resource_group"{
+
 
 }
