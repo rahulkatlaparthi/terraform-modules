@@ -19,20 +19,20 @@ provider "azurerm" {
   features {}
 }
 
-module "resource_group"{
-  source = "./RG"
-  resource_group_name=var.resource_group_name
-  location=var.location
-}
+// module "resource_group"{
+//   source = "./RG"
+//   resource_group_name=var.resource_group_name
+//   location=var.location
+// }
 
-module "storage"{
-  source = "./Storage"
-  resource_group_name=var.resource_group_name
-  location=var.location
-  account_tier             = var.account_tier
-  account_replication_type = var.account_replication_type
-  depends_on=[module.resource_group]
-}
+// module "storage"{
+//   source = "./Storage"
+//   resource_group_name=var.resource_group_name
+//   location=var.location
+//   account_tier             = var.account_tier
+//   account_replication_type = var.account_replication_type
+//   depends_on=[module.resource_group]
+// }
 
 module "storage"{
   source = "./Storage"
