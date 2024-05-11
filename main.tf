@@ -54,7 +54,7 @@ module "appservice"{
   resource_group_name=var.resource_group_name
   location=var.location
   app_service_name= var.app_service_name
-  app_service_plan_id=module.appserviceplan.id
+  app_service_plan_id=module.appserviceplan.appserviceplanid
   user_assigned_identity=module.umi.id
 }
 
