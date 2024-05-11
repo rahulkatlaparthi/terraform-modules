@@ -21,7 +21,7 @@ provider "azurerm" {
 
 module "resource_group"{
   source = "./terraform-azurerm-vnet"
-  resource_group_name="example-resourcess"
+  resource_group_name=var.resource_group_name
   location="West Europe"
 
 
