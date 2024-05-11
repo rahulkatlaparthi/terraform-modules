@@ -16,5 +16,10 @@ variable "location" {
   type        = string
 }
 
+variable "account_tier" {
+  
+  type        = string
+}
+
 
 
