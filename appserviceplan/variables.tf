@@ -10,3 +10,8 @@ variable "location" {
   type        = string
 }
 
+variable "tier" {
+  
+
+  type        = string
+}
