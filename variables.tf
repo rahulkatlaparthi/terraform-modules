@@ -19,5 +19,16 @@ variable "location" {
   type        = string
 }
 
+variable "account_tier" {
+  default     = "West Europe"
+  type        = string
+}
+
+variable "account_replication_type" {
+  default     = "West Europe"
+  type        = string
+}
+
+
 
 
