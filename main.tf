@@ -55,6 +55,6 @@ module "appservice"{
   location=var.location
   app_service_name= var.app_service_name
   app_service_plan_id=module.appserviceplan.appserviceplanid
-  user_assigned_identity=module.umi.id
+  user_assigned_identity=module.umi.umiid
 }
 
