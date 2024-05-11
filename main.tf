@@ -21,7 +21,7 @@ provider "azurerm" {
 
 module "storage"{
     source = "./terraform-azurerm-vnet"
-    name                      = var.storage_account_name
+    name                      = "sampleahsts"
     resource_group_name       = "example-resources"
     location                  = "West Europe"
     access_tier= var.access_tier
