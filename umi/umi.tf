@@ -5,3 +5,7 @@ resource "azurerm_user_assigned_identity" "example" {
   location                  = var.location
   
 }
+
+output "appserviceplanid" {
+    value = "${azurerm_user_assigned_identity.example.id}"
+}
