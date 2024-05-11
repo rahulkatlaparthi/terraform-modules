@@ -15,3 +15,11 @@ variable "tier" {
 
   type        = string
 }
+
+variable "size" {
+  
+
+  type        = string
+}
+
+
