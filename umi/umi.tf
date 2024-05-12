@@ -7,5 +7,5 @@ resource "azurerm_user_assigned_identity" "example" {
 }
 
 output "umiid" {
-    value = azurerm_user_assigned_identity.example.principal_id
+    value = azurerm_user_assigned_identity.example.id
 }
