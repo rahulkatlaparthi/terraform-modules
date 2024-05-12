@@ -1,12 +1,12 @@
 resource "azurerm_sql_server" "example" {
-  name                         = "mssqlserver"
-  resource_group_name          = azurerm_resource_group.example.name
-  location                     = azurerm_resource_group.example.location
-  version                      = "12.0"
-  administrator_login          = "mradministrator"
-  administrator_login_password = "thisIsDog11"
+  name                         = var.name
+  resource_group_name          = var.resource_group_name
+  location                     = var.location
+  version                      = var.version
+  administrator_login          = var.administrator_login
+  administrator_login_password = var.administrator_login_password
 
   tags = {
-    environment = "production"
+    environment = var.environment
   }
 }
