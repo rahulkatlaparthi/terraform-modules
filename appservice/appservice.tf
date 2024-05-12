@@ -13,7 +13,7 @@ resource "azurerm_app_service" "exampleappservice" {
   }
     identity{
     type="UserAssigned"
-    identity_ids="/subscriptions/aa8cf85a-4850-4a20-a36c-298efad14547/resourceGroups/example-resourcessssesSSSs/providers/Microsoft.ManagedIdentity/userAssignedIdentities/example-identity"
+    identity_ids=["/subscriptions/aa8cf85a-4850-4a20-a36c-298efad14547/resourceGroups/example-resourcessssesSSSs/providers/Microsoft.ManagedIdentity/userAssignedIdentities/example-identity"]
   }
   
 
