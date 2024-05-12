@@ -68,7 +68,7 @@ module "sql"{
   administrator_login_password = var.administrator_login_password
   environment =  var.environment
   name                         = var.name
-  user_assigned_identity=var.umi.id
+  user_assigned_identity =var.umi.id
  
 }
 
