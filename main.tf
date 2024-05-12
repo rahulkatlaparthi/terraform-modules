@@ -41,13 +41,13 @@ provider "azurerm" {
 
 // }
 
-module "appserviceplan"{
-  source = "./appserviceplan"
-  resource_group_name=var.resource_group_name
-  location=var.location
-  tier=var.tier
-  size=var.size
-}
+// module "appserviceplan"{
+//   source = "./appserviceplan"
+//   resource_group_name=var.resource_group_name
+//   location=var.location
+//   tier=var.tier
+//   size=var.size
+// }
 
 module "appservice"{
   source = "./appservice"
