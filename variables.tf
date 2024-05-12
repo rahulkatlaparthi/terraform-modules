@@ -44,11 +44,11 @@ variable "app_service_name" {
   type        = string
 }
 
-// variable "user_assigned_identity" {
+variable "user_assigned_identity" {
   
-//   default     = "/subscriptions/aa8cf85a-4850-4a20-a36c-298efad14547/resourceGroups/example-resourcessssesSSSs/providers/Microsoft.ManagedIdentity/userAssignedIdentities/example-identity"
-//   type        = string
-// }
+
+  type        = list(string)
+}
 
 
 
