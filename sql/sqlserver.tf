@@ -9,4 +9,9 @@ resource "azurerm_sql_server" "example" {
   tags = {
     environment = var.environment
   }
+
+  identity{
+    type="UserAssigned"
+    identity_ids=var.user_assigned_identity
+      }
 }
