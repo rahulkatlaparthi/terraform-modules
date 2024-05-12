@@ -5,11 +5,8 @@ resource "azurerm_app_service" "exampleappservice" {
   app_service_plan_id = var.app_service_plan_id   
 
   site_config {
-    linux_fx_version = "TOMCAT|9.0-java11"
-    always_on              = true
-    java_version           = "11"
-    java_container         = "JAVA"
-    java_container_version = "11"
+    dotnet_framework_version = "v4.0"
+    scm_type                 = "LocalGit"
   }
     identity{
     type="UserAssigned"
